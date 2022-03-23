@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zach and Jack JS Project</title>
+    <title>TestForProject</title>
     <style>
         html{
             background-color: aqua;
@@ -112,8 +112,8 @@
             border-radius: 2px;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
 
-            width: 500px;
-            height: 40px;
+            width: 250px;
+            height: 20px;
 
             position: relative;
             display: block;
@@ -213,56 +213,56 @@
     </script>
 </head>
 <body>
-<div>
-    <div id="twn">0</div>
-    <div id="mbut"><button onclick = "userPoints.tpInc()" class="purple">Waste Time</button></div>
-</div>
-<div>
-    <progress id="bar1" max="100" value="0">
-        <div class="progress-bar">
-            <span style="width: 0%;">Progress: 0%</span>
+    <div>
+        <div id="twn">0</div>
+        <div id="mbut"><button onclick = "userPoints.tpInc()" class="purple">Waste Time</button></div>
+    </div>
+        <div>
+            <progress id="bar1" max="100" value="0">
+                <div class="progress-bar">
+                    <span style="width: 0%;">Progress: 0%</span>
+                </div>
+            </progress>
+            <br>
+            <progress id="bar2" max="100" value="0">
+                <div class="progress-bar">
+                    <span style="width: 0%;">Progress: 0%</span>
+                </div>
+            </progress>
+            <br>
+            <progress id="bar3" max="100" value="0">
+                <div class="progress-bar">
+                    <span style="width: 0%;">Progress: 0%</span>
+                </div>
+            </progress>
         </div>
-    </progress>
-    <br>
-    <progress id="bar2" max="100" value="0">
-        <div class="progress-bar">
-            <span style="width: 0%;">Progress: 0%</span>
+        <div id="but1"  class="cool"  onclick="userPoints.levelUpUg1()"><!-- First of three buttons to use points on -->
+            <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect id="shape" height="40" width="150" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">10</text>
+                </g>
+                <div id="text"><span class="spot"></span>Lose Productivity</div>
+            </svg>
         </div>
-    </progress>
-    <br>
-    <progress id="bar3" max="100" value="0">
-        <div class="progress-bar">
-            <span style="width: 0%;">Progress: 0%</span>
+        <div id="but2"  class="cool"  onclick="userPoints.levelUpUg2()">
+            <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect id="shape" height="40" width="150" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">100</text>
+                </g>
+                <div id="text"><span class="spot"></span>Auto Time Waster</div>
+            </svg>
         </div>
-    </progress>
-</div>
-<div id="but1"  class="cool"  onclick="userPoints.levelUpUg1()"><!-- First of three buttons to use points on -->
-    <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-        <g>
-            <rect id="shape" height="40" width="150" />
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">10</text>
-        </g>
-        <div id="text"><span class="spot"></span>Lose Productivity</div>
-    </svg>
-</div>
-<div id="but2"  class="cool"  onclick="userPoints.levelUpUg2()">
-    <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-        <g>
-            <rect id="shape" height="40" width="150" />
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">100</text>
-        </g>
-        <div id="text"><span class="spot"></span>Auto Time Waster</div>
-    </svg>
-</div>
-<div id="but3"  class="cool"  onclick="userPoints.levelUpUg3()">
-    <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-        <g>
-            <rect id="shape" height="40" width="150" />
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">1000</text>
-        </g>
-        <div id="text"><span class="spot"></span>Lollygag Multiplier</div>
-    </svg>
-</div>
-</div>
+        <div id="but3"  class="cool"  onclick="userPoints.levelUpUg3()">
+            <svg role="button" aria-pressed="false" height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect id="shape" height="40" width="150" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="inc">1000</text>
+                </g>
+                <div id="text"><span class="spot"></span>Lollygag Multiplier</div>
+            </svg>
+        </div>
+    </div>
 </body>
 </html>
